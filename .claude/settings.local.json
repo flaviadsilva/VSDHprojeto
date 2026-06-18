@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm create *)",
+      "Bash(pnpm add *)",
+      "Bash(pnpm dlx *)",
+      "Bash(pnpm build *)",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); const matches = Object.keys\\(m\\).filter\\(k => k.toLowerCase\\(\\).includes\\('linked'\\)\\); console.log\\(matches\\);\")",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); const matches = Object.keys\\(m\\).filter\\(k => k.toLowerCase\\(\\).includes\\('link'\\)\\); console.log\\(matches.slice\\(0,20\\)\\);\")",
+      "Bash(pnpm dev *)",
+      "Bash(grep -n \"py-28\\\\|py-36\\\\|py-20\" src/components/sections/*.tsx src/components/footer.tsx)",
+      "Bash(sed -i 's/py-28 lg:py-36/py-16 lg:py-20/g' src/components/sections/*.tsx)",
+      "Bash(sed -i 's/py-20 lg:py-28/py-14 lg:py-16/g' src/components/footer.tsx)"
+    ]
+  }
+}
