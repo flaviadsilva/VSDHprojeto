@@ -7,13 +7,15 @@ import { Mic, BookOpen, FileCheck } from "lucide-react";
 const categories = [
   {
     icon: Mic,
-    title: "Palestras",
+    title: "Cursos",
     items: [
-      "Autoliderança",
-      "Liderança Inspiradora",
-      "Liderança Feminina",
+      "Formação de Analistas DISC",
+      "Gestão de Cargos e Salários",
+      "Gestão por Competências",
+      "Desenvolvimento de Lideranças",
       "Inteligência Emocional",
-      "Segurança Psicológica",
+      "Cultura Organizacional",
+      "Saúde Mental e NR-01",
     ],
     featured: true,
   },
@@ -21,17 +23,20 @@ const categories = [
     icon: BookOpen,
     title: "Treinamentos",
     items: [
-      "Feedback que Transforma",
-      "Comunicação Assertiva",
-      "Gestão do Tempo",
-      "Formação de Analistas DISC",
+      "PDL - Programa de Desenvolvimento de Lideranças",
+      "Gestão de Conflitos",
+      "Comunicação para Liderança",
+      "Riscos Psicossociais (NR 01)",
     ],
     featured: false,
   },
   {
     icon: FileCheck,
-    title: "Cursos Compulsórios",
-    items: ["Assédio Moral", "CIPAA (NR-5)"],
+    title: "Compulsórios",
+    items: [
+      "Prevenção e Combate ao Assédio Sexual e Moral no Trabalho",
+      "Formação de CIPAA (NR05)",
+    ],
     featured: false,
   },
 ];
@@ -51,7 +56,7 @@ export function SectionPalestras() {
             Capacitação
           </span>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">
-            Palestras e Treinamentos
+            Palestras, Treinamentos e Cursos
           </h2>
         </motion.div>
 

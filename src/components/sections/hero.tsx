@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const WHATSAPP_LINK =
   "https://wa.me/5551997026577?text=Olá! Quero potencializar minha empresa com a VSDH.";
 
-const words = ["Desenvolvendo", "pessoas,", "fortalecendo", "culturas."];
+const words = ["Desenvolvendo", "pessoas,", "fortalecendo", "culturas,", "impulsionando", "resultados."];
 
 export function SectionHero() {
   return (

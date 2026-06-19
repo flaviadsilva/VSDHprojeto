@@ -14,12 +14,12 @@ const values = [
   {
     icon: Eye,
     title: "Visão",
-    text: "Ser referência em consultoria de desenvolvimento humano e organizacional no Brasil.",
+    text: "Construir uma trajetória marcada pela credibilidade, transparência e respeito, sendo referência para clientes que buscam soluções responsáveis, humanas e alinhadas à realidade de seus negócios.",
   },
   {
     icon: Heart,
     title: "Valores",
-    text: "Ética, humanização, excelência, inovação e compromisso com resultados sustentáveis.",
+    text: "Ética e Transparência, Humanização, Excelência, Respeito e Compromisso com resultados.",
   },
 ];
 
@@ -64,9 +64,16 @@ export function SectionQuemSomos() {
             </div>
 
             <p className="text-[#02084b]/45 leading-relaxed">
-              A <strong className="text-[#02084b] font-semibold">VSDH Consultoria e Treinamentos</strong> atua
-              há mais de 16 anos no mercado de Gestão de Pessoas e Desenvolvimento Humano e
-              Organizacional, ajudando empresas a transformar desafios em estratégias de crescimento.
+              A <strong className="text-[#02084b] font-semibold">VSDH Consultoria e Treinamentos</strong> nasceu
+              da experiência e da paixão pelo desenvolvimento humano e organizacional. Fundada por
+              Veridiana de Souza, a consultoria oferece soluções estratégicas para empresas que desejam
+              fortalecer sua cultura, desenvolver lideranças, potencializar equipes e construir
+              ambientes de trabalho mais saudáveis e produtivos.
+            </p>
+            <p className="text-[#02084b]/45 leading-relaxed">
+              Nossa atuação combina conhecimento técnico, visão estratégica e uma abordagem humanizada,
+              apoiando organizações na transformação de desafios em oportunidades de crescimento e
+              resultados sustentáveis.
             </p>
 
             <div className="p-5 rounded-[5px] bg-[#02084b]">
@@ -74,10 +81,12 @@ export function SectionQuemSomos() {
                 Veridiana de Souza — Fundadora
               </h3>
               <p className="text-[13px] text-white/55 leading-relaxed">
-                Técnica em Segurança do Trabalho, Graduada em Gestão de Recursos Humanos (Unisinos),
-                Pós-Graduada em Psicologia Organizacional (PUCRS), Especialista em Liderança e
-                Coaching, Analista DISC e Master PNL. Mais de 16 anos de experiência em
-                desenvolvimento de lideranças e equipes de alta performance.
+                Psicóloga Organizacional e Especialista em Liderança e Coaching pela PUCRS, com mais
+                de 16 anos de experiência em Gestão de Pessoas, Desenvolvimento Humano e
+                Organizacional. Graduada em Recursos Humanos pela Unisinos, Técnica em Segurança do
+                Trabalho, Analista DISC e Master Practitioner em Programação Neurolinguística (PNL).
+                Atua no desenvolvimento de lideranças, fortalecimento da cultura organizacional e
+                estruturação de práticas estratégicas de gestão de pessoas.
               </p>
             </div>
 
