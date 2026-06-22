@@ -123,6 +123,15 @@ export function Footer() {
             >
               &lt;Flávia.dev /&gt;
             </a>
+            {" "}| Apoio de{" "}
+            <a
+              href="https://db.app.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-white transition-colors font-mono"
+            >
+              db.app
+            </a>
           </span>
         </Container>
       </div>

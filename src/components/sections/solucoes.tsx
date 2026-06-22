@@ -65,7 +65,7 @@ export function SectionSolucoes() {
           <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/40">
             O que fazemos
           </span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">Nossas Soluções</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">Nossas Soluções</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { SectionHero } from "@/components/sections/hero";
+import { SectionLogosCarousel } from "@/components/sections/logos-carousel";
 import { SectionParaQuem } from "@/components/sections/para-quem";
 import { SectionQuemSomos } from "@/components/sections/quem-somos";
 import { SectionMetodologia } from "@/components/sections/metodologia";
@@ -15,6 +16,7 @@ export default function Home() {
       <WhatsAppFloat />
       <main>
         <SectionHero />
+        <SectionLogosCarousel />
         <SectionParaQuem />
         <SectionQuemSomos />
         <SectionMetodologia />

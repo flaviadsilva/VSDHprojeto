@@ -14,7 +14,7 @@ const values = [
   {
     icon: Eye,
     title: "Visão",
-    text: "Construir uma trajetória marcada pela credibilidade, transparência e respeito, sendo referência para clientes que buscam soluções responsáveis, humanas e alinhadas à realidade de seus negócios.",
+    text: "Ser referência em consultoria humana e responsável, marcada pela credibilidade, transparência e respeito.",
   },
   {
     icon: Heart,
@@ -25,80 +25,99 @@ const values = [
 
 export function SectionQuemSomos() {
   return (
-    <section id="quem-somos" className="w-full py-16 lg:py-20 relative">
+    <section id="quem-somos" className="w-full py-14 md:py-20 lg:py-28 relative">
       <Container className="relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-16 items-start">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-8 md:mb-14"
+        >
+          <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/50">
+            Sobre nós
+          </span>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">
+            Quem Somos
+          </h2>
+        </motion.div>
+
+        {/* Main content — photo + all info on the right */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 md:gap-12 lg:gap-16 items-start">
+          {/* Photo */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative"
+            transition={{ duration: 0.7 }}
+            className="relative flex justify-center"
           >
-            <div className="relative w-full aspect-[3/4] max-w-[360px]">
-              <div className="absolute inset-6 bg-[#02084b]/5 blur-[30px] rounded-[5px]" />
-              <div className="relative w-full h-full rounded-[5px] overflow-hidden">
-                <Image
-                  src="/retrato.jpeg"
-                  alt="Veridiana de Souza"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 360px"
-                  className="object-cover object-top"
-                />
+            <div className="relative w-full max-w-[280px] md:max-w-[360px]">
+              <Image
+                src="/retrato.jpeg"
+                alt="Veridiana de Souza"
+                width={360}
+                height={480}
+                sizes="(max-width: 768px) 100vw, 360px"
+                className="w-full h-auto object-contain"
+              />
+              <div className="text-center mt-4">
+                <p className="text-[#02084b] font-bold text-base">Veridiana de Souza</p>
+                <p className="text-[#02084b]/50 text-[13px]">Fundadora da VSDH</p>
               </div>
             </div>
           </motion.div>
 
+          {/* Right side — text + cards */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-col gap-7"
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="flex flex-col gap-4"
           >
-            <div>
-              <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/40">
-                Sobre nós
-              </span>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">Quem Somos</h2>
-            </div>
-
-            <p className="text-[#02084b]/45 leading-relaxed">
+            <p className="text-[#02084b]/70 leading-[1.8] text-[15px]">
               A <strong className="text-[#02084b] font-semibold">VSDH Consultoria e Treinamentos</strong> nasceu
-              da experiência e da paixão pelo desenvolvimento humano e organizacional. Fundada por
-              Veridiana de Souza, a consultoria oferece soluções estratégicas para empresas que desejam
-              fortalecer sua cultura, desenvolver lideranças, potencializar equipes e construir
-              ambientes de trabalho mais saudáveis e produtivos.
+              da experiência e da paixão pelo desenvolvimento humano e organizacional. Oferecemos
+              soluções estratégicas para empresas que desejam fortalecer sua cultura, desenvolver
+              lideranças e construir ambientes de trabalho mais saudáveis e produtivos.
             </p>
-            <p className="text-[#02084b]/45 leading-relaxed">
+            <p className="text-[#02084b]/70 leading-[1.8] text-[15px]">
               Nossa atuação combina conhecimento técnico, visão estratégica e uma abordagem humanizada,
-              apoiando organizações na transformação de desafios em oportunidades de crescimento e
-              resultados sustentáveis.
+              transformando desafios em oportunidades de crescimento sustentável.
             </p>
 
             <div className="p-5 rounded-[5px] bg-[#02084b]">
               <h3 className="text-sm font-semibold text-white mb-2">
-                Veridiana de Souza — Fundadora
+                Sobre a Fundadora
               </h3>
-              <p className="text-[13px] text-white/55 leading-relaxed">
+              <p className="text-[13px] text-white/70 leading-[1.8]">
                 Psicóloga Organizacional e Especialista em Liderança e Coaching pela PUCRS, com mais
-                de 16 anos de experiência em Gestão de Pessoas, Desenvolvimento Humano e
-                Organizacional. Graduada em Recursos Humanos pela Unisinos, Técnica em Segurança do
-                Trabalho, Analista DISC e Master Practitioner em Programação Neurolinguística (PNL).
-                Atua no desenvolvimento de lideranças, fortalecimento da cultura organizacional e
-                estruturação de práticas estratégicas de gestão de pessoas.
+                de 16 anos de experiência em Gestão de Pessoas e Desenvolvimento Humano. Graduada em
+                Recursos Humanos pela Unisinos, Analista DISC e Master Practitioner em PNL. Atua no
+                desenvolvimento de lideranças, fortalecimento da cultura organizacional e estruturação
+                de práticas estratégicas.
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-3">
-              {values.map((item) => (
-                <div key={item.title} className="p-4 rounded-[5px] bg-[#f4f5f7]">
+            {/* Values cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {values.map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  className="p-4 rounded-[5px] bg-[#f4f5f7]"
+                >
                   <div className="flex items-center gap-2 mb-2">
-                    <item.icon className="w-3.5 h-3.5 text-[#02084b]/35" />
+                    <item.icon className="w-3.5 h-3.5 text-[#02084b]/40" />
                     <span className="text-[13px] font-semibold text-[#02084b]">{item.title}</span>
                   </div>
-                  <p className="text-[12px] text-[#02084b]/35 leading-relaxed">{item.text}</p>
-                </div>
+                  <p className="text-[12px] text-[#02084b]/50 leading-relaxed">{item.text}</p>
+                </motion.div>
               ))}
             </div>
           </motion.div>

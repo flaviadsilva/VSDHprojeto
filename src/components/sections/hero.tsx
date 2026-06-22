@@ -11,7 +11,7 @@ const words = ["Desenvolvendo", "pessoas,", "fortalecendo", "culturas,", "impuls
 
 export function SectionHero() {
   return (
-    <section id="home" className="w-full h-screen flex items-center relative overflow-hidden">
+    <section id="home" className="w-full min-h-screen flex items-center relative overflow-hidden">
       {/* Grid background */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -39,12 +39,12 @@ export function SectionHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/40 mb-6"
+          className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/70 mb-6"
         >
           Consultoria &amp; Treinamentos
         </motion.span>
 
-        <h1 className="text-4xl md:text-5xl lg:text-[3.8rem] xl:text-[4.5rem] font-bold leading-[1.1] tracking-tight text-[#02084b]">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.1] tracking-tight text-[#02084b]">
           {words.map((word, i) => (
             <motion.span
               key={i}
@@ -62,7 +62,7 @@ export function SectionHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-base lg:text-lg text-[#02084b]/40 leading-relaxed max-w-xl mt-6"
+          className="text-base md:text-lg lg:text-xl text-[#02084b]/80 leading-relaxed max-w-xl mt-4 md:mt-6"
         >
           Transformamos desafios de gestão em estratégias práticas que fortalecem lideranças e
           desenvolvem equipes. Atuação estratégica e humanizada para o crescimento do seu negócio.

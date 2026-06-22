@@ -55,12 +55,12 @@ export function SectionPalestras() {
           <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/40">
             Capacitação
           </span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">
             Palestras, Treinamentos e Cursos
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {categories.map((cat, i) => {
             const dark = cat.featured;
             return (

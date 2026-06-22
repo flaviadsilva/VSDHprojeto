@@ -49,7 +49,7 @@ export function SectionParaQuem() {
           <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-[#02084b]/40">
             Nosso público
           </span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#02084b] mt-3">
             Para quem é o nosso trabalho?
           </h2>
         </motion.div>
