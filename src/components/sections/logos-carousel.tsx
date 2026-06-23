@@ -6,10 +6,10 @@ import Image from "next/image";
 const logos = [
   "/lgoos/Captura de tela 2026-06-22 192422.png",
   "/lgoos/Captura de tela 2026-06-22 192434.png",
-  "/lgoos/Captura de tela 2026-06-22 192448.png",
+  "/lgoos/Captura de tela 2026-06-23 203550.png",
   "/lgoos/Captura de tela 2026-06-22 192455.png",
   "/lgoos/Captura de tela 2026-06-22 192504.png",
-  "/lgoos/Captura de tela 2026-06-22 192514.png",
+  "/lgoos/Ultramar logo.png",
   "/lgoos/Captura de tela 2026-06-22 192521.png",
   "/lgoos/WhatsApp Image 2026-06-22 at 18.37.57.jpeg",
 ];
